@@ -1,0 +1,168 @@
+/* =========================================
+   RESPONSIVE FIXES - KEEP ORIGINAL STYLE
+   ========================================= */
+
+/* ---------- Generic Layout ---------- */
+.timelly-website {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Header ---------- */
+@media (max-width: 992px) {
+  .timelly-web-header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+    text-align: center;
+  }
+  .timelly-web-header .div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .timelly-web-header .frame-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ---------- Hero ---------- */
+@media (max-width: 768px) {
+  .frame-4 {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .frame-4 .p {
+    font-size: clamp(24px, 6vw, 40px);
+  }
+  .frame-4 .text-wrapper-5 {
+    font-size: clamp(14px, 3vw, 18px);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* ---------- Features Section ---------- */
+@media (max-width: 1024px) {
+  .frame-7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .frame-7 .group-5,
+  .frame-7 .group-6 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    flex: 1 1 300px;
+    max-width: 340px;
+    padding: 20px;
+  }
+
+  .rectangle-2 {
+    width: 100%;
+  }
+
+  .text-wrapper-9,
+  .text-wrapper-10 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* ---------- Pricing Plans ---------- */
+@media (max-width: 1200px) {
+  .plans-pricing-nd .frame-17 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .plans-pricing-3,
+  .plans-pricing-4,
+  .plans-pricing-5 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    flex: 1 1 300px;
+    max-width: 360px;
+    padding: 30px 20px;
+  }
+
+  .frame-22 .frame-23 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .text-wrapper-22,
+  .text-wrapper-24 {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .plans-pricing-nd .frame-17 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plans-pricing-3,
+  .plans-pricing-4,
+  .plans-pricing-5 {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .text-wrapper-21 {
+    font-size: 22px;
+  }
+
+  .text-wrapper-23,
+  .text-wrapper-24 {
+    font-size: 14px;
+  }
+}
+
+/* ---------- Compare Table ---------- */
+@media (max-width: 768px) {
+  .frame-30 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-header-row {
+    min-width: 600px;
+  }
+}
+
+/* ---------- Footer ---------- */
+@media (max-width: 768px) {
+  .web-footer .frame-26 {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .web-footer .div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .web-footer .text-wrapper-37 {
+    font-size: 14px;
+    margin: 4px 8px;
+  }
+}
