@@ -354,8 +354,7 @@ font-size: clamp(20px, 2.5vw, 34px);
   border: none;
 }
 
-.button-label-2,
-.button-label-3 {
+.pricing-card {
   font-size: 18px;
   font-weight: 600;
 }
