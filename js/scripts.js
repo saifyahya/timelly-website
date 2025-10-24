@@ -635,13 +635,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     'ad_storage': 'granted'
                   });
                   
-                  let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
-                  cards.forEach(card => card.classList.add("pricing-card"));
+                  // let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
+                  // cards.forEach(card => card.classList.add("pricing-card"));
                   
-                  let langToggle = document.getElementById("language-toggle-button");
-                  if (langToggle) {
-                    langToggle.classList.add("lang-toggle");
-                  }
+                  // let langToggle = document.getElementById("language-toggle-button");
+                  // if (langToggle) {
+                  //   langToggle.classList.add("lang-toggle");
+                  // }
                 
              
                 } else {
@@ -650,13 +650,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     'ad_storage': 'denied'
                   });
 
-                  let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
-                  cards.forEach(card => card.classList.remove("pricing-card"));
+                  // let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
+                  // cards.forEach(card => card.classList.remove("pricing-card"));
                 
-                  let langToggle = document.getElementById("language-toggle-button");
-                  if (langToggle) {
-                    langToggle.classList.remove("lang-toggle");
-                  }
+                  // let langToggle = document.getElementById("language-toggle-button");
+                  // if (langToggle) {
+                  //   langToggle.classList.remove("lang-toggle");
+                  // }
                 }
                 
               }
