@@ -630,6 +630,11 @@ document.addEventListener('DOMContentLoaded', () => {
               onStatusChange: function (status, chosenBefore) {
 
                 if (String(status).trim() === "allow") {
+                  gtag('consent', 'update', {
+                    'analytics_storage': 'granted',
+                    'ad_storage': 'granted'
+                  });
+                  
                   let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
                   cards.forEach(card => card.classList.add("pricing-card"));
                   
@@ -638,7 +643,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     langToggle.classList.add("lang-toggle");
                   }
                 
+             
                 } else {
+                  gtag('consent', 'update', {
+                    'analytics_storage': 'denied',
+                    'ad_storage': 'denied'
+                  });
+
                   let cards = document.querySelectorAll(".plans-pricing-3, .plans-pricing-4, .plans-pricing-5");
                   cards.forEach(card => card.classList.remove("pricing-card"));
                 
