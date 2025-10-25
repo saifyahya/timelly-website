@@ -118,6 +118,7 @@ font-weight: bold;
   position: relative;
 }
 .frame-4 .p {
+  text-align: left;
     font-size: clamp(32px, 5vw, 86px);
     font-weight: 700;
     line-height: 1.2;
@@ -151,7 +152,9 @@ font-weight: bold;
 
 /* ---------------- SLIDER ---------------- */
 .slider {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 60px 5vw;
   position: relative;
 }
@@ -167,10 +170,10 @@ font-weight: bold;
 }
 .arrow-right-alt-wrapper,
 .arrow-left-alt-wrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #fff;
+  /* position: absolute;
+  top: 50%; */
+  /* transform: translateY(-50%);
+  background: #fff; */
   border: 1px solid #ccc;
   border-radius: 50%;
   width: 55px;
@@ -185,8 +188,8 @@ font-weight: bold;
   transform: rotate(-180deg);
 }
 
-#slider-prev { left: 25%; }
-#slider-next { right: 25%; }
+#slider-prev { left: 15%; }
+#slider-next { right: 15%; }
 
 .slider-dots-wrapper{
 display: flex;
@@ -250,7 +253,7 @@ display: flex;
 /* ---------------- PRICING HEADER ---------------- */
 .group-19 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -633,12 +636,12 @@ align-items: center;
 }
 
 /* --- Half-circle positioning (mirrored horizontally) --- */
-.timelly-website .group-13 { top: 7%;   left: 39%; }
-.timelly-website .group-14 { top: 16%;  left: 22%;  }
-.timelly-website .group-15 { top: 28%;  left: 9%;  }
-.timelly-website .group-16 { top: 43%;  left: 1%;  }
-.timelly-website .group-17 { top: 58%;  left: 6%;  }
-.timelly-website .group-18 { top: 70%;  left: 20%; }
+.timelly-website .group-13 { top: 6%;   left: 46%; }
+.timelly-website .group-14 { top: 18%;  left: 21%;  }
+.timelly-website .group-15 { top: 33%;  left: 7%;  }
+.timelly-website .group-16 { top: 50%;  left: 6%;  }
+.timelly-website .group-17 { top: 67%;  left: 18%;  }
+.timelly-website .group-18 { top: 79%;  left: 44%; }
 
 /* inner bubbles */
 .timelly-website .ellipse-7,
@@ -675,12 +678,12 @@ align-items: center;
 }
 
 /* text */
-.timelly-website .text-wrapper-16,
-.timelly-website .text-wrapper-17,
+.timelly-website .team-management,
+.timelly-website .project-management,
 .timelly-website .easy-time-entry,
 .timelly-website .visual-analytics,
-.timelly-website .text-wrapper-18,
-.timelly-website .text-wrapper-19 {
+.timelly-website .time-sheets,
+.timelly-website .reporting {
   z-index: 2;
   color: #ffffff;
   font-family: "Cairo", sans-serif;
@@ -689,6 +692,14 @@ align-items: center;
   text-align: center;
   padding: 0 10px;
   line-height: 1.3em;
+}
+.timelly-website .team-management,
+.timelly-website .easy-time-entry,
+.timelly-website .visual-analytics,
+.timelly-website .project-management 
+{
+width: 130px;
+line-height: 1.8;
 }
 
 /* hover glow */
@@ -1127,6 +1138,7 @@ align-items: center;
   margin-top: 10px;
 }
 .frame-29 {
+  width: 100%;
   padding: 40px 0;
 }
 .footer-pages-wrapper{

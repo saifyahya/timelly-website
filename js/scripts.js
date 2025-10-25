@@ -9,10 +9,12 @@ const translations = {
   plans_2 : "Plans",
     plans: "Plans",
     pricing: "Pricing",
+    and: "&",
     yearly: "Yearly",
     monthly: "Monthly",
     save_up_to30: "Save up to 30%",
       features: "Features",
+      text_wrapper_the: 'The',
       plans_pricing: "Plans & Pricing",
       request_demo: "Request For Demo",
       switch_language: "Switch to Arabic",
@@ -73,9 +75,10 @@ const translations = {
   ultimate_plan: "Ultimate",
   ultimate_description: "Gain enhanced access control and extensive customization options.",
   contact_us: "Contact us",
-  "choose_best_plan": "Choose the best plan to fit your team’s needs. Get started for free. No credit card required.",
-timesheets: "Timesheets",
-timesheets_description: "Provides a clear overview of time spent on projects, clients, or activities.",
+  choose_best_plan: "Choose the best plan to fit your team’s needs.",
+  start_free: " Get started for free. No credit card required.",
+  timesheets: "Timesheets",
+  timesheets_description: "Provides a clear overview of time spent on projects, clients, or activities.",
     project_management_desc: "Organize, plan, and track all your projects.",
     team_management_desc: "Manage roles, responsibilities, and teams.",
     easy_time_entry_desc: "Quickly enter time with minimal effort.",
@@ -85,6 +88,8 @@ timesheets_description: "Provides a clear overview of time spent on projects, cl
     project_management: "Project Management",
     team_management: "Team Management",
     easy_time_entry: "Easy Time Entry",
+    easy: 'Easy',
+    time_entry: "Time Entry",
     visual_analytics: "Visual Analytics",
     reporting: "Reporting",
 
@@ -298,11 +303,13 @@ timesheets_description: "Provides a clear overview of time spent on projects, cl
       cookie_allow: "السماح بملفات تعريف الارتباط",
       cookie_deny: "رفض",
   compare: "قارن",
-    plans: " الخطط و",
+    plans: " الخطط",
     plans_2:" الخطط",
+    and: 'و',
     pricing: "التسعير",
     save_up_to30: "وفر حتى 30%",
       features: "الميزات",
+      text_wrapper_the:'',
       plans_pricing: "الخطط والتسعير",
       request_demo: "طلب عرض توضيحي",
       switch_language: "التبديل إلى العربية",
@@ -363,7 +370,8 @@ timesheets_description: "Provides a clear overview of time spent on projects, cl
   ultimate_plan: "الأقصى",
   ultimate_description: "احصل على تحكم محسن في الوصول وخيارات تخصيص واسعة.",
   contact_us: "اتصل بنا",
-  "choose_best_plan": "اختر الخطة الأفضل التي تناسب احتياجات فريقك.ابدأ مجانًا. لا حاجة لبطاقة ائتمان.",
+  choose_best_plan: "اختر الخطة الأفضل التي تناسب احتياجات فريقك.",
+  start_free:"ابدأ مجانًا، لا حاجة لبطاقة ائتمان.",
 timesheets: "الجداول الزمنية",
 timesheets_description: "يوفر نظرة واضحة على الوقت الذي تم قضاؤه في المشاريع والعملاء أو الأنشطة.",
     project_management_desc: "نظّم، خطط، وتابع جميع مشاريعك.",
@@ -374,7 +382,9 @@ timesheets_description: "يوفر نظرة واضحة على الوقت الذي
     timesheets_feature: "جداول الوقت",
     project_management: "إدارة المشاريع",
     team_management: "إدارة الفريق",
-    easy_time_entry: "إدخال الوقت بسهولة",
+    easy_time_entry: "سهولة إدخال الوقت",
+    easy: 'سهولة',
+    time_entry: "إدخال الوقت",
     visual_analytics: "تحليلات مرئية",
     reporting: "إعداد التقارير",
 
@@ -692,7 +702,21 @@ function applyTranslations(lang) {
   });
   toggleImagesDirection(lang);
   updateLangToggleLabel(lang);
+  toggleTextAlignToRight(lang);
     }
+
+    function toggleTextAlignToRight(lang) {
+      const paragraphs = document.querySelectorAll(".frame-4 .p");
+    
+      paragraphs.forEach(p => {
+        if (lang === 'ar') {
+          p.style.textAlign = "right";
+        } else {
+          p.style.textAlign = "left";
+        }
+      });
+    }
+     
 
 function toggleImagesDirection(lang) {
   const firstImg = document.querySelector('.compare-table-wrapper > div:nth-child(1) > img');
@@ -700,12 +724,12 @@ function toggleImagesDirection(lang) {
   const periodToggleArrow = document.getElementById('vector');
   const durationPeriodWrapper = document.getElementById('durationPeriodWrapper');
 
-  const timeSheet = document.querySelector('.text-wrapper-16');
-  const projectManagement = document.querySelector('.text-wrapper-17');
-  const teamManagement = document.querySelector('.text-wrapper-19');
+  const timeSheet = document.querySelector('.time-sheets');
+  const projectManagement = document.querySelector('.project-management');
+  const teamManagement = document.querySelector('.team-management');
   const easyTimeEntry = document.querySelector('.easy-time-entry');
   const visualAnalytics = document.querySelector('.visual-analytics');
-  const reporting = document.querySelector('.text-wrapper-18');
+  const reporting = document.querySelector('.reporting');
 
   const featureItems = [timeSheet, projectManagement, teamManagement, easyTimeEntry, visualAnalytics, reporting];
 
@@ -1110,7 +1134,6 @@ function updatePlans(duration) {
   });
   applyTranslations(currentLanguage);
 }
-
 
 
 function showSliderImage(index) {
