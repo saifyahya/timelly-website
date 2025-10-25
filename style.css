@@ -21,6 +21,7 @@
 /* ---------------- BASE ---------------- */
 html{
   font-family: "Cairo", Helvetica, sans-serif !important;
+  user-select: none;
 }
 
 .timelly-website {
@@ -49,7 +50,7 @@ html{
   justify-content: space-between;
   align-items: center;
   padding: 25px 20vw;
-
+  width: 100%;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.4); */
   position: relative;
   z-index: 10;
@@ -321,6 +322,7 @@ font-size: clamp(20px, 2.5vw, 34px);
   font-size: 32px; /* larger plan name */
   font-weight: 800;
   margin-bottom: 20px;
+  
 }
 
 /* Descriptions */
@@ -328,8 +330,21 @@ font-size: clamp(20px, 2.5vw, 34px);
 .plans-pricing-4 p,
 .plans-pricing-5 p {
   font-size: 18px;
+  /* margin-bottom: 20px; */
+}
+
+/* Descriptions */
+.plans-pricing-3 .text-wrapper-22,
+.plans-pricing-4 .text-wrapper-22,
+.plans-pricing-5 .text-wrapper-31 {
   line-height: 1.8;
+}
+
+.plans-pricing-3 .frame-19,
+.plans-pricing-4 .frame-25,
+.plans-pricing-5 .frame-25 {
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /* Feature list items */
@@ -410,12 +425,10 @@ font-size: clamp(20px, 2.5vw, 34px);
   }
 
 /* Better spacing inside sections */
-.frame-18,
-.frame-19,
-.frame-20,
-.frame-21,
-.frame-22 {
-  margin-bottom: 24px;
+
+.frame-21{
+   margin-bottom: 20px; 
+  text-align: center;
 }
 
 .frame-26{
@@ -1022,7 +1035,8 @@ line-height: 1.8;
 
 /* Ultimate "Custom" price */
 .text-wrapper-23 {
-    font-size: 22px;
+    text-align: center;
+    font-size: 34px;
     color: #0072CE;
 }
 
