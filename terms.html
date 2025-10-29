@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,132 +9,201 @@
   <link rel="stylesheet" href="styleguide.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
-      .timelly-web-header .black-links{
-   color: black !important;
-   }
-   .spacer{
-    background-color: var(--text-ligh-gray) !important;
-   }
- 
- .terms-container {
-   width: min(1100px, 92vw);
-   margin: 0 auto;
-   padding-block: 50px;
-   background-color: #ffffff;
- }
- .terms-header {
-   margin-block: 40px;
- }
- .terms-title {
-   font-weight: 700;
-   font-size: clamp(40px, 5vw, 52px);
-   line-height: 1.2;
- }
- ul{
-    list-style: disc;
-  }
- .terms-subtitle {
-   font-weight: 400;
-   color: var(--text-secondary);
-   font-size: 18px;
-   line-height: 28px;
- }
- .terms-content {
-   color: var(--text-secondary);
-   line-height: 1.8;
-   font-size: 17px;
- }
- .terms-section {
-   margin-bottom: 40px;
- }
- .terms-section h2 {
-   font-weight: 800;
-   font-size: 26px;
-   margin-bottom: 16px;
- }
- .terms-section h3 {
-   font-weight: 600;
-   font-size: 20px;
-   color: var(--text-primary);
-   margin: 24px 0 12px;
- }
- .terms-section p {
-   font-size: 26px;
- }
- .terms-section ul {
-   margin: 0 0 16px 20px;
-   padding: 0;
- }
- .terms-section li {
-   margin-bottom: 8px;
-   font-size: 20px;
- }
- .back-link {
-   display: inline-flex;
-   align-items: center;
-   gap: 8px;
-   color: var(--brand-blue);
-   font-weight: 500;
-   margin-top: 40px;
-   text-decoration: none;
- }
- .back-link:hover {
-   opacity: 0.8;
- }
- @media (max-width: 768px) {
-   .terms-container {
-     padding: calc(var(--header-height) + 32px) 0 64px;
-   }
- }
+    .timelly-web-header .black-links {
+      color: black !important;
+    }
+
+    .spacer {
+      background-color: var(--text-ligh-gray) !important;
+    }
+
+    .terms-container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+      padding-block: 50px;
+      background-color: #ffffff;
+    }
+
+    .terms-header {
+      margin-block: 40px;
+    }
+
+    .terms-title {
+      font-weight: 700;
+      font-size: clamp(40px, 5vw, 52px);
+      line-height: 1.2;
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    .terms-subtitle {
+      font-weight: 400;
+      color: var(--text-secondary);
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .terms-content {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .terms-section {
+      margin-bottom: 40px;
+    }
+
+    .terms-section h2 {
+      font-weight: 800;
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .terms-section h3 {
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--text-primary);
+      margin: 24px 0 12px;
+    }
+
+    .terms-section p {
+      font-size: 26px;
+    }
+
+    .terms-section ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    .terms-section li {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand-blue);
+      font-weight: 500;
+      margin-top: 40px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .terms-container {
+        padding: calc(var(--header-height) + 32px) 0 64px;
+      }
+    }
   </style>
+
+    <script>
+      mobileMenuVisible = false;
+function toggleMobileMenu() {
+  let menuToggle = document.querySelector('.menu-toggle');
+  if (menuToggle) {
+    mobileMenuVisible = !mobileMenuVisible;
+    let menuItems = document.querySelector('.mobile-menu');
+    if (menuItems) {
+      if (mobileMenuVisible) {
+        menuItems.style.display = 'block';
+      } else {
+        menuItems.style.display = 'none';
+      }
+    }
+  }
+}
+  </script>
 </head>
+
 <body>
   <div class="timelly-web-header">
-    <div class="frame ">
-        <a href="index.html" class="logo">
-            <img class="group" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
-        </a>
-        <nav class="div" role="navigation" aria-label="Main navigation">
-            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links black-links" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
-        </nav>
-    </div>
-    <div class="frame-2">
-        <a class="text-wrapper-3 lang-toggle black-links" lang="ar"  aria-label="Switch to Arabic" data-i18n="switch_language" id="language-toggle-button">العربية</a>
+    <div class="frame">
+      <a href="index.html" class="logo">
+        <img class="timelly-logo" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" style="display: none;"
+        onclick="toggleMobileMenu()"><i style="color: black;" class="fa-solid fa-bars fa-lg"></i></div>
+
+      <nav class="div" role="navigation" aria-label="Main navigation" style="display: flex;">
+        <a href="index.html#features-wrapper" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links"
+          style="width: max-content;" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For
+          Demo</a>
+      </nav>
+
+      <div class="frame-2">
+        <a class="lang-toggle language-toggle-button black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
         <div class="frame-wrapper">
-            <div class="frame-3">
-                <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links" data-i18n="login">Login</a>
-                <div class="signupButton">
-                  <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly" data-i18n="sign_up">
-                      <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
-                  </a>
-                </div>
+          <div class="frame-3" style="width: max-content;">
+            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links"
+              data-i18n="login">Login</a>
+            <div class="signupButton">
+              <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+                data-i18n="sign_up">
+                <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="spacer"></div>
+
+       <div class="mobile-menu" style="display: none;">
+      <nav class="div mg-top10px" role="navigation" aria-label="Main navigation">
+        <a href="index.html#features" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links" style="width: max-content;"
+          target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
+      </nav>
+      <div style="display: flex;">
+        <a class="lang-toggle language-toggle-button mg-top10px black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 mg-top10px black-links" data-i18n="login">Login</a>
+        <div class="signupButton mg-top10px">
+          <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+            data-i18n="sign_up">
+            <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
 
   <main class="terms-container">
     <div class="bactToHomeWrapper">
-      <a href="index.html" class="blue-link" data-i18n="terms.back">Homepage</a> 
+      <a href="index.html" class="blue-link" data-i18n="terms.back">Homepage</a>
       <span>/</span>
       <span data-i18n="footer.terms" class="secondary-ink">Terms of Use</span>
     </div>
-    
+
     <header class="terms-header">
       <h1 class="terms-title" data-i18n="terms.title">Terms of Use</h1>
     </header>
-  
+
     <div class="terms-content">
       <section class="terms-section">
         <h2 data-i18n="terms.intro.title">1. Introduction</h2>
         <p data-i18n="terms.intro.body">These terms of service ("Terms") govern your use of Timelly...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.conduct.title">2. User Conduct</h2>
-        <p data-i18n="terms.conduct.intro">You agree to use the Website in accordance with all applicable laws and regulations...</p>
+        <p data-i18n="terms.conduct.intro">You agree to use the Website in accordance with all applicable laws and
+          regulations...</p>
         <ul>
           <li data-i18n="terms.conduct.point1">Use the Website for any unlawful purpose...</li>
           <li data-i18n="terms.conduct.point2">Impersonate any person or entity...</li>
@@ -141,37 +211,37 @@
           <li data-i18n="terms.conduct.point4">Upload, post, or transmit any content...</li>
         </ul>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.ip.title">3. Intellectual Property</h2>
         <p data-i18n="terms.ip.body">The Website and its content, including but not limited to text, graphics...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.disclaimer.title">4. Disclaimer of Warranties</h2>
         <p data-i18n="terms.disclaimer.body">The website is provided on an "as is" and "as available" basis...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.liability.title">5. Limitation of Liability</h2>
         <p data-i18n="terms.liability.body">In no event shall we be liable for any direct, indirect, incidental...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.indemnification.title">6. Indemnification</h2>
         <p data-i18n="terms.indemnification.body">You agree to indemnify, defend, and hold harmless [Your Name]...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.law.title">7. Governing Law</h2>
         <p data-i18n="terms.law.body">These Terms shall be governed by and construed in accordance...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.changes.title">8. Changes to Terms</h2>
         <p data-i18n="terms.changes.body">We may revise these Terms from time to time...</p>
       </section>
-  
+
       <section class="terms-section">
         <h2 data-i18n="terms.contact.title">9. Contact Information</h2>
         <p data-i18n="terms.contact.body">If you have any questions about these Terms, please contact us at...</p>
@@ -181,31 +251,33 @@
 
 
   <div class="web-footer">
-      <div class="frame-26">
-          <a href="index.html"
-          ><div class="logo">
-              <img class="group" src="images/timellyLogoWhite.png" /></div
-          ></a>
-          <div class="footer-pages-wrapper">
-              <div class="text-wrapper-37">
-                  <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="about.html" data-i18n="footer.about">About Us</a>
-              </div>
-              <div class="text-wrapper-37">© eSense 2025</div>
-          </div>
-          <a href="https://www.esensesoftware.com/">
-              <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
-          </a>
+    <div class="frame-26">
+      <a href="index.html">
+        <div class="logo">
+          <img class="group" src="images/timellyLogoWhite.png" />
+        </div>
+      </a>
+      <div class="footer-pages-wrapper">
+        <div class="text-wrapper-37">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="about.html" data-i18n="footer.about">About Us</a>
+        </div>
+        <div class="text-wrapper-37">© eSense 2025</div>
       </div>
+      <a href="https://www.esensesoftware.com/">
+        <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
+      </a>
+    </div>
   </div>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

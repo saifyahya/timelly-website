@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styleguide.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     
     .timelly-web-header .black-links{
@@ -101,31 +103,80 @@
     }
   }
   </style>
+  <script>
+      mobileMenuVisible = false;
+function toggleMobileMenu() {
+  let menuToggle = document.querySelector('.menu-toggle');
+  if (menuToggle) {
+    mobileMenuVisible = !mobileMenuVisible;
+    let menuItems = document.querySelector('.mobile-menu');
+    if (menuItems) {
+      if (mobileMenuVisible) {
+        menuItems.style.display = 'block';
+      } else {
+        menuItems.style.display = 'none';
+      }
+    }
+  }
+}
+  </script>
 </head>
 <body>
   <div class="timelly-web-header">
-    <div class="frame ">
-        <a href="index.html" class="logo">
-            <img class="group" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
-        </a>
-        <nav class="div" role="navigation" aria-label="Main navigation">
-            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links black-links" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
-        </nav>
-    </div>
-    <div class="frame-2">
-        <a class="text-wrapper-3 lang-toggle black-links" lang="ar"  aria-label="Switch to Arabic" data-i18n="switch_language" id="language-toggle-button">العربية</a>
+    <div class="frame">
+      <a href="index.html" class="logo">
+        <img class="timelly-logo" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" style="display: none;"
+        onclick="toggleMobileMenu()"><i style="color: black;" class="fa-solid fa-bars fa-lg"></i></div>
+
+      <nav class="div" role="navigation" aria-label="Main navigation" style="display: flex;">
+        <a href="index.html#features-wrapper" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links"
+          style="width: max-content;" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For
+          Demo</a>
+      </nav>
+
+      <div class="frame-2">
+        <a class="lang-toggle language-toggle-button black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
         <div class="frame-wrapper">
-            <div class="frame-3">
-                <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links" data-i18n="login">Login</a>
-                <div class="signupButton">
-                  <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly" data-i18n="sign_up">
-                      <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
-                  </a>
-                </div>
+          <div class="frame-3" style="width: max-content;">
+            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links"
+              data-i18n="login">Login</a>
+            <div class="signupButton">
+              <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+                data-i18n="sign_up">
+                <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+
+        <div class="mobile-menu" style="display: none;">
+      <nav class="div mg-top10px" role="navigation" aria-label="Main navigation">
+        <a href="index.html#features" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links" style="width: max-content;"
+          target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
+      </nav>
+      <div style="display: flex;">
+        <a class="lang-toggle language-toggle-button mg-top10px black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 mg-top10px black-links" data-i18n="login">Login</a>
+        <div class="signupButton mg-top10px">
+          <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+            data-i18n="sign_up">
+            <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="spacer"></div>
   <main class="privacy-container">
     <div class="bactToHomeWrapper">
@@ -282,6 +333,9 @@
       </div>
   </div>
 </div>
-  <script src="js/scripts.js"></script>
+
+  <script src="js/scripts.js">
+  </script>
+  
 </body>
 </html>

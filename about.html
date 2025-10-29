@@ -1,277 +1,366 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us - Timelly</title>
-<!--  <link rel="stylesheet" href="globals.css" />-->
-<!--  <link rel="stylesheet" href="styleguide.css" />-->
+  <!--  <link rel="stylesheet" href="globals.css" />-->
+  <!--  <link rel="stylesheet" href="styleguide.css" />-->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-      .timelly-web-header .black-links{
-   color: black !important;
-   }
-   .spacer{
-    background-color: var(--text-ligh-gray) !important;
-   }
- 
- .about-container {
-   width: min(1100px, 92vw);
-   margin: 0 auto;
-   padding-block: 50px;
-   background-color: #ffffff;
- }
- .about-header {
-   text-align: center;
-   margin-bottom: 72px;
- }
- .about-title {
-   font-weight: 700;
-   color: var(--brand-blue);
-   font-size: clamp(40px, 5vw, 52px);
-   line-height: 1.2;
-   margin-bottom: 16px;
- }
- .about-subtitle {
-   font-weight: 400;
-   color: var(--text-secondary);
-   font-size: 25px;
-   line-height: 32px;
-   max-width: 640px;
-   margin: 0 auto;
- }
- .about-content {
-   color: var(--text-secondary);
-   line-height: 1.8;
-   font-size: 18px;
- }
- .about-section {
-   margin-bottom: 56px;
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
- .about-section h2 {
-   font-weight: 600;
-   font-size: 32px;
-   color: var(--brand-blue);
-   margin-bottom: 20px;
-   text-align: center;
- }
- .about-section p {
-   margin-bottom: 20px;
-   font-size: 25px;
-   max-width: 820px;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
- }
- .values-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-   gap: 32px;
-   margin-top: 40px;
- }
- .value-card {
-   background: var(--surface-muted);
-   padding: 32px 28px;
-   border-radius: var(--radius-md);
-   border: 1px solid var(--border-subtle);
-   text-align: center;
-   box-shadow: var(--shadow-md);
- }
- .value-card h3 {
-   font-weight: 600;
-   font-size: 22px;
-   color: var(--brand-blue);
-   margin-bottom: 12px;
- }
- .value-card p {
-   font-size: 20px;
-   line-height: 1.6;
-   margin: 0;
- }
- .team-section {
-   background: var(--surface-muted);
-   padding: 48px 32px;
-   border-radius: var(--radius-md);
-   border: 1px solid var(--border-subtle);
-   margin: 64px 0;
- }
- .back-link {
-   display: inline-flex;
-   align-items: center;
-   gap: 8px;
-   color: var(--brand-blue);
-   font-weight: 500;
-   margin-top: 40px;
-   text-decoration: none;
- }
- .back-link:hover {
-   opacity: 0.8;
- }
- .stats-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   gap: 32px;
-   margin: 48px 0 64px;
- }
- .stat-item {
-   text-align: center;
-   background: #f5f7fb;
-   border-radius: var(--radius-md);
-   padding: 32px 24px;
-   border: 1px solid var(--border-subtle);
-   box-shadow: var(--shadow-md);
- }
- .stat-number {
-   font-size: 40px;
-   font-weight: 700;
-   color: var(--brand-blue);
-   display: block;
-   margin-bottom: 8px;
- }
- .stat-label {
-   font-size: 16px;
-   color: var(--text-secondary);
-   font-weight: 500;
- }
- .start-your-free-trial{
-  text-align: center;
-    margin-top: 40px;
-    background-color: var(--brand-blue);
-    padding: 5px;
-    width: 170px;
-    border-radius: 5px;
-    color: white;
- }
- @media (max-width: 768px) {
-   .about-container {
-     padding: calc(var(--header-height) + 32px) 0 64px;
-   }
-   .team-section {
-     padding: 32px 20px;
-   }
- }
+    .timelly-web-header .black-links {
+      color: black !important;
+    }
+
+    .spacer {
+      background-color: var(--text-ligh-gray) !important;
+    }
+
+    .about-container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+      padding-block: 50px;
+      background-color: #ffffff;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    .about-title {
+      font-weight: 700;
+      color: var(--brand-blue);
+      font-size: clamp(40px, 5vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .about-subtitle {
+      font-weight: 400;
+      color: var(--text-secondary);
+      font-size: 25px;
+      line-height: 32px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .about-section {
+      margin-bottom: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-section h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: var(--brand-blue);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-section p {
+      margin-bottom: 20px;
+      font-size: 25px;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .value-card {
+      background: var(--surface-muted);
+      padding: 32px 28px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-card h3 {
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--brand-blue);
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .team-section {
+      background: var(--surface-muted);
+      padding: 48px 32px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      margin: 64px 0;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand-blue);
+      font-weight: 500;
+      margin-top: 40px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      opacity: 0.8;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin: 48px 0 64px;
+    }
+
+    .stat-item {
+      text-align: center;
+      background: #f5f7fb;
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat-number {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--brand-blue);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .start-your-free-trial {
+      text-align: center;
+      margin-top: 40px;
+      background-color: var(--brand-blue);
+      padding: 5px;
+      width: 170px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        padding: calc(var(--header-height) + 32px) 0 64px;
+      }
+
+      .team-section {
+        padding: 32px 20px;
+      }
+    }
   </style>
+  <script>
+    mobileMenuVisible = false;
+    function toggleMobileMenu() {
+      let menuToggle = document.querySelector('.menu-toggle');
+      if (menuToggle) {
+        mobileMenuVisible = !mobileMenuVisible;
+        let menuItems = document.querySelector('.mobile-menu');
+        if (menuItems) {
+          if (mobileMenuVisible) {
+            menuItems.style.display = 'block';
+          } else {
+            menuItems.style.display = 'none';
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
   <div class="timelly-web-header">
-    <div class="frame ">
-        <a href="index.html" class="logo">
-            <img class="group" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
-        </a>
-        <nav class="div" role="navigation" aria-label="Main navigation">
-            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links black-links" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
-        </nav>
-    </div>
-    <div class="frame-2">
-        <a class="text-wrapper-3 lang-toggle black-links" lang="ar"  aria-label="Switch to Arabic" data-i18n="switch_language" id="language-toggle-button">العربية</a>
+    <div class="frame">
+      <a href="index.html" class="logo">
+        <img class="timelly-logo" src="images/timellyLogoBlack.png" alt="Timelly Logo" />
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" style="display: none;"
+        onclick="toggleMobileMenu()"><i style="color: black;" class="fa-solid fa-bars fa-lg"></i></div>
+
+      <nav class="div" role="navigation" aria-label="Main navigation" style="display: flex;">
+        <a href="index.html#features-wrapper" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links"
+          style="width: max-content;" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For
+          Demo</a>
+      </nav>
+
+      <div class="frame-2">
+        <a class="lang-toggle language-toggle-button black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
         <div class="frame-wrapper">
-            <div class="frame-3">
-                <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links" data-i18n="login">Login</a>
-                <div class="signupButton" style="padding: 10px;">
-                  <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly" data-i18n="sign_up">
-                      <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
-                  </a>
-                </div>
+          <div class="frame-3" style="width: max-content;">
+            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 black-links"
+              data-i18n="login">Login</a>
+            <div class="signupButton">
+              <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+                data-i18n="sign_up">
+                <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="spacer"></div>
+
+    <div class="mobile-menu" style="display: none;">
+      <nav class="div mg-top10px" role="navigation" aria-label="Main navigation">
+        <a href="index.html#features" class="features black-links" data-i18n="features">Features</a>
+        <a href="index.html#pricing" class="plans-pricing black-links" data-i18n="plans_pricing">Plans & Pricing</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2 black-links" style="width: max-content;"
+          target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
+      </nav>
+      <div style="display: flex;">
+        <a class="lang-toggle language-toggle-button mg-top10px black-links" lang="ar" aria-label="Switch to Arabic"
+          data-i18n="switch_language">العربية</a>
+        <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 mg-top10px black-links" data-i18n="login">Login</a>
+        <div class="signupButton mg-top10px">
+          <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly"
+            data-i18n="sign_up">
+            <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="spacer"></div>
 
   <main class="about-container">
     <div class="bactToHomeWrapper">
-      <a href="index.html" class="blue-link" data-i18n="terms.back">Homepage</a> 
+      <a href="index.html" class="blue-link" data-i18n="terms.back">Homepage</a>
       <span>/</span>
       <span data-i18n="footer.about" class="secondary-ink">About Us</span>
-    </div>  
+    </div>
     <div class="about-header">
       <h1 class="about-title" data-i18n="about.title">About Timelly</h1>
       <p class="about-subtitle" data-i18n="about.subtitle">
         Empowering teams with innovative time tracking solutions for enhanced productivity and collaboration.
       </p>
     </div>
-  
+
     <div class="about-content">
       <div class="about-section">
         <h2 data-i18n="about.story.title">Our Story</h2>
         <p data-i18n="about.story.para1">
-          Timelly was born from the need to simplify time tracking for modern collaborative teams. We recognised that traditional time tracking methods were outdated and didn't meet the needs of today's dynamic work environments.
+          Timelly was born from the need to simplify time tracking for modern collaborative teams. We recognised that
+          traditional time tracking methods were outdated and didn't meet the needs of today's dynamic work
+          environments.
         </p>
         <p data-i18n="about.story.para2">
-          Founded by eSense Software Solutions, Timelly combines cutting-edge technology with user-centric design to create a time tracking solution that teams actually want to use.
+          Founded by eSense Software Solutions, Timelly combines cutting-edge technology with user-centric design to
+          create a time tracking solution that teams actually want to use.
         </p>
       </div>
-  
+
       <div class="about-section">
         <h2 data-i18n="about.mission.title">Our Mission</h2>
         <p data-i18n="about.mission.text">
-          To revolutionise how teams track, manage, and optimise their time, enabling better productivity, transparency, and work-life balance in the modern workplace.
+          To revolutionise how teams track, manage, and optimise their time, enabling better productivity, transparency,
+          and work-life balance in the modern workplace.
         </p>
       </div>
-  
+
       <div class="about-section">
         <h2 data-i18n="about.vision.title">Our Vision</h2>
         <p data-i18n="about.vision.text">
-          To become the leading time tracking platform that empowers organisations worldwide to make data-driven decisions about their most valuable resource: time.
+          To become the leading time tracking platform that empowers organisations worldwide to make data-driven
+          decisions about their most valuable resource: time.
         </p>
       </div>
-  
+
       <div class="values-grid">
         <div class="value-card">
           <h3 data-i18n="about.values.innovation.title">Innovation</h3>
           <p data-i18n="about.values.innovation.text">
-            We continuously evolve our platform with cutting-edge features that anticipate and meet the changing needs of modern teams.
+            We continuously evolve our platform with cutting-edge features that anticipate and meet the changing needs
+            of modern teams.
           </p>
         </div>
         <div class="value-card">
           <h3 data-i18n="about.values.simplicity.title">Simplicity</h3>
           <p data-i18n="about.values.simplicity.text">
-            We believe powerful tools should be easy to use. Our intuitive design ensures teams can focus on their work, not learning software.
+            We believe powerful tools should be easy to use. Our intuitive design ensures teams can focus on their work,
+            not learning software.
           </p>
         </div>
         <div class="value-card">
           <h3 data-i18n="about.values.security.title">Security</h3>
           <p data-i18n="about.values.security.text">
-            Your data security is our priority. We implement industry-leading security measures and comply with international standards.
+            Your data security is our priority. We implement industry-leading security measures and comply with
+            international standards.
           </p>
         </div>
         <div class="value-card">
           <h3 data-i18n="about.values.transparency.title">Transparency</h3>
           <p data-i18n="about.values.transparency.text">
-            We provide clear insights into time usage, helping teams make informed decisions and improve their productivity.
+            We provide clear insights into time usage, helping teams make informed decisions and improve their
+            productivity.
           </p>
         </div>
         <div class="value-card">
           <h3 data-i18n="about.values.collaboration.title">Collaboration</h3>
           <p data-i18n="about.values.collaboration.text">
-            We foster teamwork by providing tools that enhance communication and coordination across all project stakeholders.
+            We foster teamwork by providing tools that enhance communication and coordination across all project
+            stakeholders.
           </p>
         </div>
         <div class="value-card">
           <h3 data-i18n="about.values.excellence.title">Excellence</h3>
           <p data-i18n="about.values.excellence.text">
-            We strive for excellence in everything we do, from product development to customer support and user experience.
+            We strive for excellence in everything we do, from product development to customer support and user
+            experience.
           </p>
         </div>
       </div>
-  
+
       <div class="team-section">
         <div class="about-section">
           <h2 data-i18n="about.team.title">Our Team</h2>
           <p data-i18n="about.team.para1">
-            Timelly is developed by a passionate team of engineers, designers, and productivity experts at eSense Software Solutions. We're dedicated to creating tools that make work more efficient and enjoyable.
+            Timelly is developed by a passionate team of engineers, designers, and productivity experts at eSense
+            Software Solutions. We're dedicated to creating tools that make work more efficient and enjoyable.
           </p>
           <p data-i18n="about.team.para2">
-            Based in Saudi Arabia, we understand the unique challenges faced by businesses in the region and globally. Our diverse team brings together expertise in software development, user experience design, and business operations.
+            Based in Saudi Arabia, we understand the unique challenges faced by businesses in the region and globally.
+            Our diverse team brings together expertise in software development, user experience design, and business
+            operations.
           </p>
         </div>
       </div>
-<!--   
+      <!--   
       <div class="about-section">
         <h2 data-i18n="about.why.title">Why Choose Timelly?</h2>
         <p data-i18n="about.why.intro">
@@ -288,45 +377,49 @@
           </ul>
         </div>
       </div> -->
-  
+
       <div class="about-section">
         <h2 data-i18n="about.cta.title">Get Started Today</h2>
         <p data-i18n="about.cta.text">
-          Join thousands of teams who trust Timelly to manage their time effectively. Experience the difference that smart time tracking can make for your organisation.
+          Join thousands of teams who trust Timelly to manage their time effectively. Experience the difference that
+          smart time tracking can make for your organisation.
         </p>
         <div class="start-your-free-trial">
-          <a href="https://timelly.esensesoftware.com/login" class="btn btn--primary" style="text-decoration: none;" target="_blank" rel="noopener noreferrer" data-i18n="about.cta.button">Start Your Free Trial</a>
+          <a href="https://timelly.esensesoftware.com/login" class="btn btn--primary" style="text-decoration: none;"
+            target="_blank" rel="noopener noreferrer" data-i18n="about.cta.button">Start Your Free Trial</a>
         </div>
       </div>
     </div>
   </main>
 
   <div class="web-footer">
-      <div class="frame-26">
-          <a href="index.html"
-          ><div class="logo">
-              <img class="group" src="images/timellyLogoWhite.png" /></div
-          ></a>
-          <div class="footer-pages-wrapper">
-              <div class="text-wrapper-37">
-                  <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
-              </div>
-              <div class="text-wrapper-37">
-                  <a href="about.html" data-i18n="footer.about">About Us</a>
-              </div>
-              <div class="text-wrapper-37">© eSense 2025</div>
-          </div>
-          <a href="https://www.esensesoftware.com/">
-              <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
-          </a>
+    <div class="frame-26">
+      <a href="index.html">
+        <div class="logo">
+          <img class="group" src="images/timellyLogoWhite.png" />
+        </div>
+      </a>
+      <div class="footer-pages-wrapper">
+        <div class="text-wrapper-37">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
+        </div>
+        <div class="text-wrapper-37">
+          <a href="about.html" data-i18n="footer.about">About Us</a>
+        </div>
+        <div class="text-wrapper-37">© eSense 2025</div>
       </div>
+      <a href="https://www.esensesoftware.com/">
+        <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
+      </a>
+    </div>
   </div>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

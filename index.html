@@ -1,111 +1,147 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
-      <!--cookie -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-      <!--hreflang-->
-      <link rel="alternate" hreflang="x-default" href="https://timellywebsitev2.netlify.app/" />
-      <link rel="alternate" hreflang="en" href="https://timellywebsitev2.netlify.app/" />
-      <link rel="alternate" hreflang="ar" href="https://timellywebsitev2.netlify.app/" />
-      <!--og/twitter cards-->
-      <!-- Open Graph / Facebook -->
-      <meta property="og:title" content="Timelly" />
-      <meta property="og:description" content="The innovative time tracking solution for collaborative work." />
-      <meta property="og:image" content="https://timellywebsitev2.netlify.app/images/TimellyLogoWhite.png" />
-      <meta property="og:url" content="https://timellywebsitev2.netlify.app/" />
-      <meta property="og:type" content="website" />
-      <!-- Twitter Card -->
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Timelly" />
-      <meta name="twitter:description" content="The innovative time tracking solution for collaborative work." />
-      <meta name="twitter:image" content="https://timellywebsitev2.netlify.app/images/TimellyLogoWhite.png" />
-      <meta name="twitter:site" content="TimellyApp" />
-      <meta name="twitter:creator" content="TimellyApp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--cookie -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <!--hreflang-->
+    <link rel="alternate" hreflang="x-default" href="https://timellywebsitev2.netlify.app/" />
+    <link rel="alternate" hreflang="en" href="https://timellywebsitev2.netlify.app/" />
+    <link rel="alternate" hreflang="ar" href="https://timellywebsitev2.netlify.app/" />
+    <!--og/twitter cards-->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Timelly" />
+    <meta property="og:description" content="The innovative time tracking solution for collaborative work." />
+    <meta property="og:image" content="https://timellywebsitev2.netlify.app/images/TimellyLogoWhite.png" />
+    <meta property="og:url" content="https://timellywebsitev2.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Timelly" />
+    <meta name="twitter:description" content="The innovative time tracking solution for collaborative work." />
+    <meta name="twitter:image" content="https://timellywebsitev2.netlify.app/images/TimellyLogoWhite.png" />
+    <meta name="twitter:site" content="TimellyApp" />
+    <meta name="twitter:creator" content="TimellyApp" />
 
 
- <!-- 1Load GTM Consent defaults BEFORE the GTM container -->
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
+    <!-- Load GTM Consent defaults BEFORE the GTM container -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+    </script>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6R369B3W5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6R369B3W5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-Z6R369B3W5');
-</script>
-  
-  <!-- GTM Container Script -->
-  <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),
-          dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-54463WX5');
-  </script>
-  
+        gtag('config', 'G-Z6R369B3W5');
+    </script>
 
-  </head>
-  <body>
-  <div class="timelly-website">
-      <img class="BG" src="images/timelly-bg-2.png" />
-      <div class="timelly-web-header">
-          <div class="frame">
-              <a href="index.html" class="logo">
-                  <img class="group" src="images/timellyLogoWhite.png" alt="Timelly Logo" />
-              </a>
-              <nav class="div" role="navigation" aria-label="Main navigation">
-                  <a href="#features" class="features" data-i18n="features">Features</a>
-                  <a href="#pricing" class="plans-pricing" data-i18n="plans_pricing" >Plans & Pricing</a>
-                  <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2" style="width: max-content;" target="_blank" rel="noopener noreferrer" data-i18n="request_demo">Request For Demo</a>
-              </nav>
-          </div>
-          <div class="frame-2">
-              <a class="lang-toggle" lang="ar"  aria-label="Switch to Arabic" data-i18n="switch_language" id="language-toggle-button">العربية</a>
-              <div class="frame-wrapper">
-                  <div class="frame-3" style="width: max-content;">
-                      <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4" data-i18n="login">Login</a>
-                      <div class="signupButton">
-                        <a href="https://timelly.esensesoftware.com/login" class="button" aria-label="Sign up for Timelly" data-i18n="sign_up">
+    <!-- GTM Container Script -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-54463WX5');
+    </script>  
+
+</head>
+
+<body>
+    <div class="timelly-website">
+        <img class="BG" src="images/timelly-bg-2.png" />
+        <div class="timelly-web-header">
+            <div class="frame">
+                <a href="index.html" class="logo">
+                    <img class="timelly-logo" src="images/timellyLogoWhite.png" alt="Timelly Logo" />
+                </a>
+
+                <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" style="display: none;"
+                    onclick="toggleMobileMenu()"><i style="color: white;" class="fa-solid fa-bars fa-lg"></i></div>
+
+                <nav class="div" role="navigation" aria-label="Main navigation" style="display: flex;">
+                    <a href="#features-wrapper" class="features" data-i18n="features">Features</a>
+                    <a href="#pricing" class="plans-pricing" data-i18n="plans_pricing">Plans & Pricing</a>
+                    <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2"
+                        style="width: max-content;" target="_blank" rel="noopener noreferrer"
+                        data-i18n="request_demo">Request For Demo</a>
+                </nav>
+
+                <div class="frame-2">
+                    <a class="lang-toggle language-toggle-button" lang="ar" aria-label="Switch to Arabic"
+                        data-i18n="switch_language">العربية</a>
+                    <div class="frame-wrapper">
+                        <div class="frame-3" style="width: max-content;">
+                            <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4"
+                                data-i18n="login">Login</a>
+                            <div class="signupButton">
+                                <a href="https://timelly.esensesoftware.com/login" class="button"
+                                    aria-label="Sign up for Timelly" data-i18n="sign_up">
+                                    <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu" style="display: none;">
+                <nav class="div mg-top10px" role="navigation" aria-label="Main navigation" >
+                    <a href="#features" class="features" data-i18n="features">Features</a>
+                    <a href="#pricing" class="plans-pricing" data-i18n="plans_pricing">Plans & Pricing</a>
+                    <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-2"
+                        style="width: max-content;" target="_blank" rel="noopener noreferrer"
+                        data-i18n="request_demo">Request For Demo</a>
+                </nav>
+                <div style="display: flex;">
+                    <a class="lang-toggle language-toggle-button mg-top10px" lang="ar" aria-label="Switch to Arabic"
+                        data-i18n="switch_language">العربية</a>
+                    <a href="https://timelly.esensesoftware.com/login" class="text-wrapper-4 mg-top10px"
+                        data-i18n="login">Login</a>
+                    <div class="signupButton mg-top10px">
+                        <a href="https://timelly.esensesoftware.com/login" class="button"
+                            aria-label="Sign up for Timelly" data-i18n="sign_up">
                             <span class="button-label-wrapper"><span class="button-label">Sign Up</span></span>
                         </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="spacer"></div>
-      <div class="frame-4">
-          <p class="p" data-i18n="innovative_time_tracking">The <span class="underline">innovative</span> time tracking solution for collaborative work.</p>
-          <p class="text-wrapper-5" data-i18n="track_time_spent">Timelly is an app that tracks the time you spend working on different projects.</p>
-          <div class="rectangle"></div>
-      </div>
-      <div class="slider">
-        <div class="arrow-left-alt-wrapper" id="slider-prev">
-            <img class="arrow-left-alt" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/arrow-right-alt.svg" />
+                    </div>
+                </div>
+            </div>
         </div>
-        
-              <div>
+        <div class="spacer"></div>
+        <div class="frame-4">
+            <p class="p"><span data-i18n="the">The</span> <span class="underline" data-i18n="innovative">innovative</span><span data-i18n="innovative_time_tracking">time tracking solution for collaborative work. </span> </p>
+            <p class="text-wrapper-5" data-i18n="track_time_spent"></p>
+            <div class="rectangle"></div>
+        </div>
+        <div class="slider">
+            <div class="arrow-left-alt-wrapper" id="slider-prev">
+                <!-- <img class="arrow-left-alt" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/arrow-right-alt.svg" /> -->
+                <i class="fa-solid fa-arrow-left arrow-left-alt" style="color: #ccc;"></i>
+            </div>
+
+            <div>
                 <div class="group-2">
                     <img class="img slider-image" src="images/reportsdahsboard.png" />
                     <img class="img slider-image" src="images/timetracker.png" style="display:none;" />
@@ -116,355 +152,455 @@
                     <div class="ellipse-2 slider-dots"></div>
                     <div class="ellipse-3 slider-dots"></div>
                 </div>
-              </div>
-        
-              <div class="arrow-right-alt-wrapper" id="slider-next">
-                <img class="arrow-right-alt" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/arrow-right-alt.svg" />
             </div>
-      </div>
 
-      <div class="frame-5" id="features">
-          <div class="group-4">
-              <div>
-                  <div class="text-wrapper-6" data-i18n="why">Why</div>
-                  <div style="text-align: start;">
-                      <div class="text-wrapper-7" data-i18n="timelly">Timelly</div>
-                      <p class="text-wrapper-8" data-i18n="why_use_timelly">Here are some reasons why you should use Timelly.</p>
-                  </div>
-              </div>
-              <img class="group-7 img-snow" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141634.png" />
-          </div>
-          <div class="frame-7">
-              <div class="group-5">
-                  <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46966.svg" />
-                  <div class="ellipse-4">
-                      <div class="smart-management" data-i18n="smart_management">Smart Management</div>
-                  </div>
-                        <p class="text-wrapper-9" data-i18n="smart_management_description">
-                      It offers a user-friendly interface and an extensive suite of features to streamline time management processes.
-                  </p>
-              </div>
-              <div class="group-5">
-                  <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46969.svg" />
-                  <div class="ellipse-4">
-                      <div class="trusted-security" data-i18n="trusted_security">Trusted Security</div>
-                  </div>
-                  <p class="text-wrapper-10" data-i18n="trusted_security_description">
-                      Timely has been developed to comply with Saudi Arabia cyber security and regulations.
-                  </p>
-              </div>
-              <div class="group-6">
-                  <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46970.svg" />
-                  <div class="ellipse-4">
-                      <div class="time-efficiency" data-i18n="time_efficiency">Time Efficiency</div>
-                  </div>
-                  <p class="text-wrapper-10" data-i18n="time_efficiency_description">
-                      Timely will help individuals and teams efficiently manage their time spent on various tasks and projects.
-                  </p>
-              </div>
-          </div>
-      </div>
-      <div class="features-wrapper">
-      <div class="frame-8">
-          <img class="group-8 img-snow" style="margin-bottom:150px" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141650.png" />
-
-          <div>
-              <div class="frame-9">
-                  <div class="group-11">
-                      <div class="text-wrapper-the" data-i18n="text_wrapper_the"></div>
-                      <div class="text-wrapper-12" data-i18n="features">Features</div>
-                  </div>
-                  <p class="text-wrapper-13" data-i18n="why_use_timelly">Here are some reasons why you should use Timelly.</p>
-              </div>
-              <div class="frame-10">
-                  <div style="display: flex; align-items: center;">
-                      <div class="table-chart-wrapper">
-                          <img class="table-chart" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/style-fill.svg" />
-                      </div>
-                      <div class="frame-12">
-                          <div class="text-wrapper-14" data-i18n="timesheets">Timesheets</div>
-                      </div>
-                  </div>
-
-                  <div class="frame-11">
-                      <p class="text-wrapper-15" data-i18n="timesheets_description">Provides a clear overview of time spent on projects, clients, or activities.</p>
-                  </div>
-              </div>
-          </div>
-
-          <img class="group-8 img-snow" style="margin-top:150px; display: flex; align-self: flex-end;" src="images/blue-snow-icon.png" />
-      </div>
-
-         <div class="group-12">
-          <img style="width:100%; height: 100%;" src="images/womenWriting.png" />
-          <div class="ellipse-6"></div>
-          <div class="group-13" >
-              <div class="ellipse-7" onclick="changeDescriptionText(0, 'timesheet')" id="timesheet"></div>
-<!--              <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-1.svg" />-->
-              <div class="time-sheets" data-i18n="timesheets_feature" >Timesheets</div>
-          </div>
-          <div class="group-14" >
-              <div class="ellipse-9" onclick="changeDescriptionText(1, 'project_management')" id="project_management"></div>
-<!--              <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28.svg" />-->
-              <div class="project-management" data-i18n="project_management" >Project Management</div>
-          </div>
-          <div class="group-15" >
-              <div class="ellipse-9" onclick="changeDescriptionText(2, 'team_management')" id="team_management"></div>
-<!--              <img class="ellipse-10" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-5.svg" />-->
-              <div class="team-management" data-i18n="team_management" >Team Management</div>
-          </div>
-          <div class="group-16">
-              <div class="ellipse-9" onclick="changeDescriptionText(3, 'time_entry')" id="time_entry"></div>
-<!--              <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-2.svg" />-->
-              <div class="easy-time-entry"> <span data-i18n="easy" style="display: block;">Easy</span>
-                 <span data-i18n="time_entry">
-                Time Entry
-              </span>
-                </div>
-          </div>
-          <div class="group-17" >
-              <div class="ellipse-9" onclick="changeDescriptionText(4, 'visual_analytics')" id="visual_analytics"></div>
-<!--              <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-3.svg" />-->
-              <div class="visual-analytics" data-i18n="visual_analytics" >Visual Analytics</div>
-          </div>
-          <div class="group-18">
-              <div class="ellipse-9" onclick="changeDescriptionText(5, 'reporting')" id="reporting"></div>
-<!--              <img class="ellipse-11" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-4.svg" />-->
-              <div class="reporting" data-i18n="reporting" >Reporting</div>
-          </div>
-      </div>
-      </div>
-      <div class="group-19" id="pricing">
-          <div>
-
-              <div class="text-wrapper-19" data-i18n="plans">Plans</div>
-              <div class="frame-6">
-                  <div class="pricing" ><span data-i18n="and">&</span><span data-i18n="pricing" style="margin-inline: 20px;">Pricing</span></div>
-                  <p class="choose-the-best-plan">
-                    <span data-i18n="choose_best_plan" style="display: block;">Choose the best plan to fit your team’s needs.</span>
-                    <span data-i18n="start_free">Get started for free. No credit card required.</span>
-                  </p>
-              </div>
+            <div class="arrow-right-alt-wrapper" id="slider-next">
+                <i class="fa-solid fa-arrow-right arrow-right-alt" style="color: #ccc;"></i>
             </div>
-              <img class="group-9 img-snow" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141654.png" />
-         
-      </div>
-      <div class="plans-pricing-nd">
-          <div id="durationPeriodWrapper" style=" display: flex; align-items: center;">
-              <div class="frame-14" style="display:flex">
-                  <div class="frame-15">
-                      <div class="your-session-has-tim-wrapper">
-                          <div class="your-session-has-tim" data-i18n="monthly" id="monthly">Monthly</div>
-                      </div>
-                      <div class="frame-16">
-                          <div class="default-duration-toggle" data-i18n="yearly" id="yearly">Yearly</div>
-                      </div>
-                  </div>
-              </div>
-              <div style="margin-top: 15px; margin-inline: 10px;">
-                  <div style="color: #0071ce; font-weight: 700" data-i18n="save_up_to30">SAVE UP TO 30%</div>
-                  <img id="vector" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/vector-6.svg" />
-              </div>
-          </div>
-          <div class="frame-17">
-              <div class="plans-pricing-3">
-                  <div class="frame-18">
-                      <div class="text-wrapper-21" data-i18n="essential_plan">Essential</div>
-                      <p class="text-wrapper-22" data-i18n="essential_description">Manage project life cycles from quote to cash in a single system.</p>
-                  </div>
-                  <div class="frame-19">
-                      <div class="frame-12">
-                          <div class="frame-20">
-                              <div class="frame-21"><div class="text-wrapper-23" data-i18n="free">Free</div></div>
-                              <button class="button-2">
-                                  <div class="button-label-wrapper">
-                                    <div class="pricing-card" data-i18n="try_for_free" data-plan= 'essential plan id'>Try for free</div></div>
-                              </button>
-                          </div>
-                          <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card required.</p>
-                      </div>
-                  </div>
-                  <div class="frame-22">
-                      <div class="frame-18"><div class="text-wrapper-25" data-i18n="essential_includes">Essential plan includes:</div></div>
-                      <div id="essential-features"> // filled by JS</div>
-            </div>
-               </div>
-
-              <div class="plans-pricing-4">
-                  <div class="frame-18">
-                      <div class="text-wrapper-21" data-i18n="standard_plan" >Standard</div>
-                      <p class="text-wrapper-22" data-i18n="standard_description">Manage projects end-to-end and automate standardized processes.</p>
-                  </div>
-                  <div class="frame-25">
-                      <div class="frame-12">
-                          <div class="frame-20">
-                              <div class="frame-21">
-                                  <p class="element-month">
-                                      <span class="span">$40.00</span>
-                                      <span class="text-wrapper-28">&nbsp;</span>
-                                      <span class="text-wrapper-29" data-i18n="month">Month</span>
-                                  </p>
-                              </div>
-                              <button class="button-2">
-                                  <div class="button-label-wrapper">
-                                    <div class="pricing-card" data-i18n="try_for_free" data-plan= 'standard plan id'>Try for free</div></div>
-                              </button>
-                           
-                          </div>
-                          <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card required.</p>
-                      </div>
-                  </div>
-                  <div class="frame-22">
-                      <div class="frame-18"><div class="text-wrapper-25" data-i18n="everything_in_essential">Everything in Essential, plus:</div></div>
-                      <div id="standard-features"> // filled by JS
-
-                      </div>
-
-                  </div>
-              </div>
-
-              <div class="plans-pricing-5">
-                  <div class="frame-18">
-                      <div class="frame-26">
-                          <div class="text-wrapper-30" data-i18n="advanced_plan">Advanced</div>
-                          <button class="button-3">
-                              <div class="frame-27"><div class="button-label" data-i18n="recommended">Recommended</div></div>
-                          </button>
-                      </div>
-                      <p class="text-wrapper-31" data-i18n="advanced_description">Go deep with project budgeting, resource planning, and reports.</p>
-                  </div>
-                  <div class="frame-25">
-                      <div class="frame-12">
-                          <div class="frame-20">
-                              <div class="frame-21">
-                                  <p class="element-month-2">
-                                      <span class="span">$63.00</span>
-                                      <span class="text-wrapper-28">&nbsp;</span>
-                                      <span class="text-wrapper-29" data-i18n="month">Month</span>
-                                  </p>
-                              </div>
-                              <button class="button-4">
-                                  <div class="button-label-wrapper">
-                                    <div class="pricing-card" data-i18n="try_for_free" data-plan= 'advanced plan id'>Try for free</div>
-                                </div>
-                              </button>
-                        
-                          </div>
-                          <p class="text-wrapper-32" data-i18n="free_trial">Free 14-day trial, no credit card required.</p>
-                      </div>
-                  </div>
-                  <div class="frame-22">
-                      <div class="frame-18"><div class="text-wrapper-33" data-i18n="everything_in_standard">Everything in Standard, plus:</div></div>
-                      <div id="advanced-features"> // filled by JS</div>
-
-                  </div>
-              </div>
-
-              <div class="plans-pricing-3">
-                  <div class="frame-18">
-                      <div class="text-wrapper-21" data-i18n="ultimate_plan">Ultimate</div>
-                      <p class="text-wrapper-22" data-i18n="ultimate_description">Gain enhanced access control and extensive customization options.</p>
-                  </div>
-                  <div class="frame-19">
-                      <div class="frame-12">
-                          <div class="frame-20">
-                              <div class="frame-21"><div class="text-wrapper-23" data-i18n="custom">Custom</div></div>
-                              <button class="button-2">
-                                  <div class="button-label-wrapper"><div class="pricing-card" data-i18n="contact_us" data-plan= 'ultimate plan id'>Contact us</div></div>
-                              </button>
-                          </div>
-                          <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card required.</p>
-                      </div>
-                  </div>
-                  <div class="frame-22">
-                      <div class="frame-18"><div class="text-wrapper-25" data-i18n="everything_in_advanced">Everything in Advanced, plus:</div></div>
-                      <div id="ultimate-features"> // filled by JS
-                      </div>
-                  </div>
-              </div>
-              
         </div>
-      </div>
-      <div class="compare-table-wrapper">
-          <div >
-              <img class="" src="images/cropped-manWritingNotes.png" />
-              <img class="group-10 img-snow" style="display: flex; align-self: center;"  src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141637.png" />
 
-          </div>
-          <div>
-              <div class="frame-29">
-                <div style=" width: 100%; display: flex; justify-content: space-between;">
-                    <div class="group-21">
-                        <div class="text-wrapper-11" data-i18n="compare">Compare</div>
-                        <div class="text-wrapper-36" data-i18n="plans_2">Plans</div>
+        <div class="frame-5" id="features">
+            <div class="group-4">
+                <div>
+                    <div class="text-wrapper-6" data-i18n="why">Why</div>
+                    <div style="text-align: start;">
+                        <div class="text-wrapper-7" data-i18n="timelly">Timelly</div>
+                        <p class="text-wrapper-8" data-i18n="why_use_timelly">Here are some reasons why you should use
+                            Timelly.</p>
                     </div>
-                    <img class="group-8 img-snow" style="display: flex; align-self: flex-start;" src="images/blue-snow-icon.png" />
                 </div>
-                  <p class="text-wrapper-8" data-i18n="why_use_timelly">Here are some reasons why you should use timelly.</p>
-                  
-              </div>
-              <div class="frame-30">
-                  <div class="table-header-row">
-                      <div class="table-cells">
-                          <div class="state-layer"><div class="label" data-i18n="feature">FEATURE</div></div>
-                      </div>
-                      <div class="state-layer-wrapper">
-                          <div class="state-layer"><div class="label" data-i18n="essential">ESSENTIAL</div></div>
-                      </div>
-                      <div class="state-layer-wrapper">
-                          <div class="state-layer"><div class="label" data-i18n="standard">STANDARD</div></div>
-                      </div>
-                      <div class="state-layer-wrapper">
-                          <div class="state-layer"><div class="label" data-i18n="pro">Advanced</div></div>
-                      </div>
-                      <div class="state-layer-wrapper">
-                          <div class="state-layer"><div class="label" data-i18n="ultimate">ULTIMATE</div></div>
-                      </div>
-                  </div>
-
-                  <!-- The rows will be populated dynamically by JS -->
-                  <div id="features-table"></div>
-              </div>
-          </div>
-      </div>
-      
-<!--      <div class="group-23">-->
-<!--        <div class="ellipse-16"></div>-->
-<!--        <div class="ellipse-13"></div>-->
-<!--        <div class="ellipse-14"></div>-->
-<!--        <div class="ellipse-15"></div>-->
-<!--      </div>-->
-
-<!--      <img class="cursor" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/cursor.svg" />-->
-      <div class="web-footer">
-        <div class="frame-26">
-          <a href="index.html">
-              <div class="logo">
-              <img class="group" src="images/timellyLogoWhite.png"/>
-              </div>
-          </a>
-          <div class="footer-pages-wrapper">
-            <div class="text-wrapper-37">
-                <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
+                <img class="group-7 img-snow" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141634.png" />
             </div>
-            <div class="text-wrapper-37">
-                <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+            <div class="frame-7">
+                <div class="group-5">
+                    <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46966.svg" />
+                    <div class="ellipse-4">
+                        <div class="smart-management" data-i18n="smart_management">Smart Management</div>
+                    </div>
+                    <p class="text-wrapper-9" data-i18n="smart_management_description">
+                        It offers a user-friendly interface and an extensive suite of features to streamline time
+                        management processes.
+                    </p>
+                </div>
+                <div class="group-5">
+                    <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46969.svg" />
+                    <div class="ellipse-4">
+                        <div class="trusted-security" data-i18n="trusted_security">Trusted Security</div>
+                    </div>
+                    <p class="text-wrapper-10" data-i18n="trusted_security_description">
+                        Timely has been developed to comply with Saudi Arabia cyber security and regulations.
+                    </p>
+                </div>
+                <div class="group-6">
+                    <img class="rectangle-2" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/rectangle-46970.svg" />
+                    <div class="ellipse-4">
+                        <div class="time-efficiency" data-i18n="time_efficiency">Time Efficiency</div>
+                    </div>
+                    <p class="text-wrapper-10" data-i18n="time_efficiency_description">
+                        Timely will help individuals and teams efficiently manage their time spent on various tasks and
+                        projects.
+                    </p>
+                </div>
             </div>
-            <div class="text-wrapper-37">
-                <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
-            </div>
-            <div class="text-wrapper-37">
-                <a href="about.html" data-i18n="footer.about">About Us</a>
-            </div>
-            <div class="text-wrapper-37">© eSense 2025</div>
-            </div>
-            <a href="https://www.esensesoftware.com/">
-                <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
-            </a>
         </div>
-      </div>
+        <div class="features-wrapper" id="features-wrapper">
+            <div class="frame-8">
+                <img class="group-8 img-snow" style="margin-bottom:150px"
+                    src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141650.png" />
+
+                <div>
+                    <div class="frame-9">
+                        <div class="group-11">
+                            <div class="text-wrapper-the" data-i18n="text_wrapper_the"></div>
+                            <div class="text-wrapper-12" data-i18n="features">Features</div>
+                        </div>
+                        <p class="text-wrapper-13" data-i18n="why_use_timelly">Here are some reasons why you should use
+                            Timelly.</p>
+                    </div>
+
+
+                   <div class="mobile_mode_fetaures" style="display: none;">
+                        <div id="prev-feature"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="mobile-feature">
+           
+                            <div data-i18n="timesheets_feature">Timesheets</div>
+                        </div>
+                        <div class="mobile-feature" style="display: none;">
+                
+                            <div class="project-management-mobile" data-i18n="project_management">Project Management</div>
+                        </div>
+                        <div class="mobile-feature" style="display: none;">
+
+                            <div class="team-management-mobile" data-i18n="team_management">Team Management</div>
+                        </div>
+                        <div class="mobile-feature" style="display: none;">
+              
+                            <div class="easy-time-entry-mobile"> <span data-i18n="easy" style="display: block;">Easy</span>
+                                <span data-i18n="time_entry">
+                                    Time Entry
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mobile-feature" style="display: none;">
+          
+                            <div class="visual-analytics-mobile" data-i18n="visual_analytics">Visual Analytics</div>
+                        </div>
+                        <div class="mobile-feature" style="display: none;">
+              
+                            <div class="reporting-mobile" data-i18n="reporting">Reporting</div>
+                        </div>
+                        <div id="next-feature"><i class="fa-solid fa-angle-right"></i></div>
+                    </div> 
+
+
+                    <div class="frame-10">
+                        <div style="display: flex; align-items: center;">
+                            <div class="table-chart-wrapper">
+                                <img class="table-chart"
+                                    src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/style-fill.svg" />
+                            </div>
+                            <div class="frame-12">
+                                <div class="text-wrapper-14" data-i18n="timesheets">Timesheets</div>
+                            </div>
+                        </div>
+
+                        <div class="frame-11">
+                            <p class="text-wrapper-15" data-i18n="timesheets_description">Provides a clear overview of
+                                time spent on projects, clients, or activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="group-8 img-snow" style="margin-top:150px; display: flex; align-self: flex-end;"
+                    src="images/blue-snow-icon.png" />
+            </div>
+
+            <div class="group-12">
+                <img style="width:100%; height: 100%;" src="images/womenWriting.png" />
+                <div class="ellipse-6"></div>
+                <div class="group-13" onclick="changeDescriptionText(0, 'timesheet')" id="timesheet">
+                    <!-- <div class="ellipse-7" onclick="changeDescriptionText(0, 'timesheet')" id="timesheet"></div> -->
+                    <!-- <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-1.svg" /> -->
+                    <div class="time-sheets" data-i18n="timesheets_feature">Timesheets</div>
+                </div>
+                <div class="group-14" onclick="changeDescriptionText(1, 'project_management')" id="project_management">
+                    <!-- <div class="ellipse-9" onclick="changeDescriptionText(1, 'project_management')"
+                        id="project_management"></div> -->
+                    <!-- <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28.svg" /> -->
+                    <div class="project-management" data-i18n="project_management">Project Management</div>
+                </div>
+                <div class="group-15" onclick="changeDescriptionText(2, 'team_management')" id="team_management">
+                    <!-- <div class="ellipse-9" onclick="changeDescriptionText(2, 'team_management')" id="team_management">
+                    </div> -->
+                    <!-- <img class="ellipse-10" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-5.svg" /> -->
+                    <div class="team-management" data-i18n="team_management">Team Management</div>
+                </div>
+                <div class="group-16" onclick="changeDescriptionText(3, 'time_entry')" id="time_entry">
+                    <!-- <div class="ellipse-9" onclick="changeDescriptionText(3, 'time_entry')" id="time_entry"></div> -->
+                    <!-- <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-2.svg" /> -->
+                    <div class="easy-time-entry"> <span data-i18n="easy" style="display: block;">Easy</span>
+                        <span data-i18n="time_entry">
+                            Time Entry
+                        </span>
+                    </div>
+                </div>
+                <div class="group-17" onclick="changeDescriptionText(4, 'visual_analytics')" id="visual_analytics">
+                    <!-- <div class="ellipse-9" onclick="changeDescriptionText(4, 'visual_analytics')" id="visual_analytics">
+                    </div> -->
+                    <!-- <img class="ellipse-8" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-3.svg" /> -->
+                    <div class="visual-analytics" data-i18n="visual_analytics">Visual Analytics</div>
+                </div>
+                <div class="group-18" onclick="changeDescriptionText(5, 'reporting')" id="reporting">
+                    <!-- <div class="ellipse-9" onclick="changeDescriptionText(5, 'reporting')" id="reporting"></div> -->
+                    <!-- <img class="ellipse-11" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/ellipse-28-4.svg" /> -->
+                    <div class="reporting" data-i18n="reporting">Reporting</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="group-19" id="pricing">
+            <div>
+
+                <div class="text-wrapper-19" data-i18n="plans">Plans</div>
+                <div class="frame-6">
+                    <div class="pricing"><span data-i18n="and">&</span><span data-i18n="pricing"
+                            style="margin-inline: 20px;">Pricing</span></div>
+                    <p class="choose-the-best-plan">
+                        <span data-i18n="choose_best_plan" style="display: block;">Choose the best plan to fit your
+                            team’s needs.</span>
+                        <span data-i18n="start_free">Get started for free. No credit card required.</span>
+                    </p>
+                </div>
+            </div>
+            <img class="group-9 img-snow" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141654.png" />
+
+        </div>
+        <div class="plans-pricing-nd">
+            <div id="durationPeriodWrapper" style=" display: flex; align-items: center;">
+                <div class="frame-14" style="display:flex">
+                    <div class="frame-15">
+                        <div class="your-session-has-tim-wrapper">
+                            <div class="your-session-has-tim" data-i18n="monthly" id="monthly">Monthly</div>
+                        </div>
+                        <div class="frame-16">
+                            <div class="default-duration-toggle" data-i18n="yearly" id="yearly">Yearly</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 15px; margin-inline: 10px;">
+                    <div style="color: #0071ce; font-weight: 700" data-i18n="save_up_to30">SAVE UP TO 30%</div>
+                    <img id="vector" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/vector-6.svg" />
+                </div>
+            </div>
+            <div class="frame-17">
+                <div class="plans-pricing-3">
+                    <div class="frame-18">
+                        <div class="text-wrapper-21" data-i18n="essential_plan">Essential</div>
+                        <p class="text-wrapper-22" data-i18n="essential_description">Manage project life cycles from
+                            quote to cash in a single system.</p>
+                    </div>
+                    <div class="frame-19">
+                        <div class="frame-12">
+                            <div class="frame-20">
+                                <div class="frame-21">
+                                    <div class="text-wrapper-23" data-i18n="free">Free</div>
+                                </div>
+                                <button class="button-2">
+                                    <div class="button-label-wrapper">
+                                        <div class="pricing-card" data-i18n="try_for_free"
+                                            data-plan='essential plan id'>Try for free</div>
+                                    </div>
+                                </button>
+                            </div>
+                            <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card
+                                required.</p>
+                        </div>
+                    </div>
+                    <div class="frame-22">
+                        <div class="frame-18">
+                            <div class="text-wrapper-25" data-i18n="essential_includes">Essential plan includes:</div>
+                        </div>
+                        <div id="essential-features"> // filled by JS</div>
+                    </div>
+                </div>
+
+                <div class="plans-pricing-4">
+                    <div class="frame-18">
+                        <div class="text-wrapper-21" data-i18n="standard_plan">Standard</div>
+                        <p class="text-wrapper-22" data-i18n="standard_description">Manage projects end-to-end and
+                            automate standardized processes.</p>
+                    </div>
+                    <div class="frame-25">
+                        <div class="frame-12">
+                            <div class="frame-20">
+                                <div class="frame-21">
+                                    <p class="element-month">
+                                        <span class="span">$40.00</span>
+                                        <span class="text-wrapper-28">&nbsp;</span>
+                                        <span class="text-wrapper-29" data-i18n="month">Month</span>
+                                    </p>
+                                </div>
+                                <button class="button-2">
+                                    <div class="button-label-wrapper">
+                                        <div class="pricing-card" data-i18n="try_for_free" data-plan='standard plan id'>
+                                            Try for free</div>
+                                    </div>
+                                </button>
+
+                            </div>
+                            <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card
+                                required.</p>
+                        </div>
+                    </div>
+                    <div class="frame-22">
+                        <div class="frame-18">
+                            <div class="text-wrapper-25" data-i18n="everything_in_essential">Everything in Essential,
+                                plus:</div>
+                        </div>
+                        <div id="standard-features"> // filled by JS
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="plans-pricing-5">
+                    <div class="frame-18">
+                        <div class="frame-26">
+                            <div class="text-wrapper-30" data-i18n="advanced_plan">Advanced</div>
+                            <button class="button-3">
+                                <div class="frame-27">
+                                    <div class="button-label" data-i18n="recommended">Recommended</div>
+                                </div>
+                            </button>
+                        </div>
+                        <p class="text-wrapper-31" data-i18n="advanced_description">Go deep with project budgeting,
+                            resource planning, and reports.</p>
+                    </div>
+                    <div class="frame-25">
+                        <div class="frame-12">
+                            <div class="frame-20">
+                                <div class="frame-21">
+                                    <p class="element-month-2">
+                                        <span class="span">$63.00</span>
+                                        <span class="text-wrapper-28">&nbsp;</span>
+                                        <span class="text-wrapper-29" data-i18n="month">Month</span>
+                                    </p>
+                                </div>
+                                <button class="button-4">
+                                    <div class="button-label-wrapper">
+                                        <div class="pricing-card" data-i18n="try_for_free" data-plan='advanced plan id'>
+                                            Try for free</div>
+                                    </div>
+                                </button>
+
+                            </div>
+                            <p class="text-wrapper-32" data-i18n="free_trial">Free 14-day trial, no credit card
+                                required.</p>
+                        </div>
+                    </div>
+                    <div class="frame-22">
+                        <div class="frame-18">
+                            <div class="text-wrapper-33" data-i18n="everything_in_standard">Everything in Standard,
+                                plus:</div>
+                        </div>
+                        <div id="advanced-features"> // filled by JS</div>
+
+                    </div>
+                </div>
+
+                <div class="plans-pricing-3">
+                    <div class="frame-18">
+                        <div class="text-wrapper-21" data-i18n="ultimate_plan">Ultimate</div>
+                        <p class="text-wrapper-22" data-i18n="ultimate_description">Gain enhanced access control and
+                            extensive customization options.</p>
+                    </div>
+                    <div class="frame-19">
+                        <div class="frame-12">
+                            <div class="frame-20">
+                                <div class="frame-21">
+                                    <div class="text-wrapper-23" data-i18n="custom">Custom</div>
+                                </div>
+                                <button class="button-2">
+                                    <div class="button-label-wrapper">
+                                        <div class="pricing-card" data-i18n="contact_us" data-plan='ultimate plan id'>
+                                            Contact us</div>
+                                    </div>
+                                </button>
+                            </div>
+                            <p class="text-wrapper-24" data-i18n="free_trial">Free 14-day trial, no credit card
+                                required.</p>
+                        </div>
+                    </div>
+                    <div class="frame-22">
+                        <div class="frame-18">
+                            <div class="text-wrapper-25" data-i18n="everything_in_advanced">Everything in Advanced,
+                                plus:</div>
+                        </div>
+                        <div id="ultimate-features"> // filled by JS
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="compare-table-wrapper">
+            <div class="man-writing-img">
+                <img class="" src="images/cropped-manWritingNotes.png" />
+                <img class="group-10 img-snow" style="display: flex; align-self: center;"
+                    src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/group-141637.png" />
+
+            </div>
+            <div class="compare-table">
+                <div class="frame-29">
+                    <div style=" width: 100%; display: flex; justify-content: space-between;">
+                        <div class="group-21">
+                            <div class="text-wrapper-11" data-i18n="compare">Compare</div>
+                            <div class="text-wrapper-36" data-i18n="plans_2">Plans</div>
+                        </div>
+                        <img class="group-8 img-snow" style="display: flex; align-self: flex-start;"
+                            src="images/blue-snow-icon.png" />
+                    </div>
+                    <p class="text-wrapper-8" data-i18n="why_use_timelly">Here are some reasons why you should use
+                        timelly.</p>
+
+                </div>
+                <div class="frame-30">
+                    <div class="compare-table-container">
+                     <div class="table-header-row">
+                        <div class="table-cells" style="justify-content: flex-start;">
+                            <div class="state-layer">
+                                <div class="label" data-i18n="feature">FEATURE</div>
+                            </div>
+                        </div>
+                        <div class="state-layer-wrapper">
+                            <div class="state-layer">
+                                <div class="label" data-i18n="essential">ESSENTIAL</div>
+                            </div>
+                        </div>
+                        <div class="state-layer-wrapper">
+                            <div class="state-layer">
+                                <div class="label" data-i18n="standard">STANDARD</div>
+                            </div>
+                        </div>
+                        <div class="state-layer-wrapper">
+                            <div class="state-layer">
+                                <div class="label" data-i18n="pro">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="state-layer-wrapper">
+                            <div class="state-layer">
+                                <div class="label" data-i18n="ultimate">ULTIMATE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The rows will be populated dynamically by JS -->
+                    <div id="features-table"></div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <!--      <div class="group-23">-->
+        <!--        <div class="ellipse-16"></div>-->
+        <!--        <div class="ellipse-13"></div>-->
+        <!--        <div class="ellipse-14"></div>-->
+        <!--        <div class="ellipse-15"></div>-->
+        <!--      </div>-->
+
+        <!--      <img class="cursor" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/cursor.svg" />-->
+        <div class="web-footer">
+            <div class="frame-26">
+                <a href="index.html">
+                    <div class="logo">
+                        <img class="timelly-logo" src="images/timellyLogoWhite.png" />
+                    </div>
+                </a>
+                <div class="footer-pages-wrapper">
+                    <div class="text-wrapper-37">
+                        <a href="terms.html" data-i18n="footer.terms">Terms of Use</a>
+                    </div>
+                    <div class="text-wrapper-37">
+                        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+                    </div>
+                    <div class="text-wrapper-37">
+                        <a href="contact.html" data-i18n="footer.contact">Contact Us</a>
+                    </div>
+                    <div class="text-wrapper-37">
+                        <a href="about.html" data-i18n="footer.about">About Us</a>
+                    </div>
+                    <div class="text-wrapper-37">© eSense 2025</div>
+                </div>
+                <a href="https://www.esensesoftware.com/">
+                    <img class="frame-31" src="https://c.animaapp.com/mg9ihmd84Sl8I2/img/frame-2608756.svg" />
+                </a>
+            </div>
+        </div>
     </div>
-  <!-- <script type="module" src="js/translation.js"></script> -->
-  <script src="js/scripts.js"></script>
+    <!-- <script type="module" src="js/translation.js"></script> -->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
