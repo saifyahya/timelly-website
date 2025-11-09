@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+
+    <link rel="preload" href="https://timelly-website.netlify.app/images/timelly-bg-2.webp" as="image" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Cairo:600,500,400,700">
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
     <!--cookie -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
@@ -33,7 +39,7 @@
     <meta name="twitter:image:alt" content="The innovative time tracking solution for collaborative work.">
 
     <!-- Load GTM Consent defaults BEFORE the GTM container -->
-    <script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', {
@@ -43,8 +49,8 @@
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6R369B3W5"></script>
-    <script>
+    <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-Z6R369B3W5"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
@@ -53,7 +59,7 @@
     </script>
 
     <!-- GTM Container Script -->
-    <script>
+    <script defer>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -598,8 +604,7 @@
             </div>
         </div>
     </div>
-    <!-- <script type="module" src="js/translation.js"></script> -->
-    <script src="js/scripts.js"></script>
+    <script defer src="js/scripts.js"></script>
 </body>
 
 </html>
