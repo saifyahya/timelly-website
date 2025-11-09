@@ -1541,7 +1541,7 @@ function toggleMobileMenu() {
     let menuItems = document.querySelector('.mobile-menu');
     if (menuItems) {
       if (mobileMenuVisible) {
-        menuItems.style.display = 'block';
+        menuItems.style.display = 'flex';
       } else {
         menuItems.style.display = 'none';
       }

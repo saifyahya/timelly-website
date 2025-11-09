@@ -125,7 +125,8 @@ html {
 .mobile-menu{
   display: flex;
   align-self: flex-end;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .mobile-menu nav {
     display: flex;
