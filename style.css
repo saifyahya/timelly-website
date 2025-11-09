@@ -129,7 +129,7 @@ html {
 }
 .mobile-menu nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
 }
 .mobile-menu a,
@@ -138,8 +138,9 @@ margin-inline: 0 !important;
 }
 .mobile-menu div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
+  gap: 15px
 }
 .mg-top10px{
   margin-top: 10px;
